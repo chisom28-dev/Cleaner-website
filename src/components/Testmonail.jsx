@@ -122,7 +122,7 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* CTA */}
+        {/* CTA
         <div className="text-center mt-16">
           <button className="inline-flex items-center px-8 py-4 bg-linear-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl hover:shadow-xl transition-all duration-300 hover:scale-105">
             <span>Read More Reviews</span>
@@ -130,7 +130,7 @@ const Testimonials = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   )

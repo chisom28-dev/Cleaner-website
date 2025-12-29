@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import HeroImage from "../assets/Hero.png"; // Placeholder for hero image
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-6">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full max-lg:mt-12">
+            <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full max-lg:mt-8 mb-4">
               <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
               <span>Trusted & Reliable</span>
             </div>
@@ -28,11 +29,14 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="flex gap-4">
               <button className="bg-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-700 transition">
-                Book Now
+                 <a  href="https://wa.me/2347059262039?text=Hi%20I%20want%20to%20book%20your%20service" 
+              target="_blank" rel="noopener noreferrer">
+              Book Now
+              </a>
               </button>
-              <button className="border-2 border-emerald-600 text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-emerald-50 transition">
+              <Link to="Contact" className="border-2 border-emerald-600 text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-emerald-50 transition">
                 Call Now
-              </button>
+              </Link>
             </div>
 
             {/* Quick Features */}

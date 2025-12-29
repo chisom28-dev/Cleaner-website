@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Sparkles, Shield, Clock, Award, ChevronRight, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, MessageCircle } from 'lucide-react'
 
 const Footer = () => {
@@ -55,7 +56,7 @@ const Footer = () => {
             </div>
             <button className="bg-white text-gray-900 hover:bg-gray-100 px-6 py-2.5 md:px-8 md:py-3 rounded-full font-semibold flex items-center transition-all hover:scale-105 whitespace-nowrap text-sm md:text-base flex-shrink-0">
               <Phone className="w-4 h-4 md:w-5 md:h-5 mr-2 flex-shrink-0" />
-              Call Now: (123) 456-7890
+              Call Now: (234) 705 926 2039
             </button>
           </div>
         </div>
@@ -75,7 +76,7 @@ const Footer = () => {
                 <p className="text-gray-400 text-xs md:text-sm truncate">Professional Cleaning Services</p>
               </div>
             </div>
-            <p className="text-gray-400 text-sm md:text-base mb-6 break-words">
+            <p className="text-gray-400 text-sm md:text-base mb-6 wrap-break-words">
               Transforming spaces with professional cleaning services you can trust. 
               We're committed to delivering exceptional results every time.
             </p>
@@ -83,25 +84,25 @@ const Footer = () => {
             <div className="space-y-3 mb-6 md:mb-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center text-gray-300">
-                  <div className="text-green-400 mr-3 flex-shrink-0">
+                  <div className="text-green-400 mr-3 shrink-0">
                     {feature.icon}
                   </div>
-                  <span className="text-xs md:text-sm break-words">{feature.text}</span>
+                  <span className="text-xs md:text-sm wrap-break-words">{feature.text}</span>
                 </div>
               ))}
             </div>
 
             <div className="flex space-x-3 md:space-x-4">
-              <a href="#" className="w-8 h-8 md:w-10 md:h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors flex-shrink-0">
+              <Link to="" className="w-8 h-8 md:w-10 md:h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors shrink-0">
                 <Facebook className="w-4 h-4 md:w-5 md:h-5" />
-              </a>
-              <a href="#" className="w-8 h-8 md:w-10 md:h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors flex-shrink-0">
+              </Link>
+              <a href="#" className="w-8 h-8 md:w-10 md:h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors shrink-0">
                 <Twitter className="w-4 h-4 md:w-5 md:h-5" />
               </a>
-              <a href="#" className="w-8 h-8 md:w-10 md:h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors flex-shrink-0">
+              <a href="#" className="w-8 h-8 md:w-10 md:h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors shrink-0">
                 <Instagram className="w-4 h-4 md:w-5 md:h-5" />
               </a>
-              <a href="#" className="w-8 h-8 md:w-10 md:h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors flex-shrink-0">
+              <a href="#" className="w-8 h-8 md:w-10 md:h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors shrink-0">
                 <Linkedin className="w-4 h-4 md:w-5 md:h-5" />
               </a>
             </div>
@@ -117,7 +118,7 @@ const Footer = () => {
                     href={link.href} 
                     className="flex items-center text-gray-400 hover:text-green-400 transition-colors group text-sm md:text-base"
                   >
-                    <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-2 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-2 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
                     <span className="truncate">{link.name}</span>
                   </a>
                 </li>
@@ -135,7 +136,7 @@ const Footer = () => {
                     href={service.href} 
                     className="flex items-center text-gray-400 hover:text-green-400 transition-colors group text-sm md:text-base"
                   >
-                    <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-2 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-2 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
                     <span className="truncate">{service.name}</span>
                   </a>
                 </li>
@@ -153,22 +154,22 @@ const Footer = () => {
                 </div>
                 <div className="min-w-0">
                   <p className="text-gray-400 text-xs md:text-sm">Call us</p>
-                  <p className="font-medium text-sm md:text-base truncate">(123) 456-7890</p>
+                  <p className="font-medium text-sm md:text-base truncate">(234) 705 926 2039</p>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <div className="w-8 h-8 md:w-10 md:h-10 bg-gray-800 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                <div className="w-8 h-8 md:w-10 md:h-10 bg-gray-800 rounded-lg flex items-center justify-center mr-3 shrink-0">
                   <Mail className="w-4 h-4 md:w-5 md:h-5 text-green-400" />
                 </div>
                 <div className="min-w-0">
                   <p className="text-gray-400 text-xs md:text-sm">Email us</p>
-                  <p className="font-medium text-sm md:text-base truncate">hello@cleanpro.com</p>
+                  <p className="font-medium text-sm md:text-base truncate">chisomsimeomfavour@gmail.com</p>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <div className="w-8 h-8 md:w-10 md:h-10 bg-gray-800 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                <div className="w-8 h-8 md:w-10 md:h-10 bg-gray-800 rounded-lg flex items-center justify-center mr-3 shrink-0">
                   <MapPin className="w-4 h-4 md:w-5 md:h-5 text-green-400" />
                 </div>
                 <div className="min-w-0">
@@ -185,7 +186,7 @@ const Footer = () => {
                     placeholder="Your email"
                     className="flex-1 bg-gray-800 border border-gray-700 rounded-lg sm:rounded-l-lg sm:rounded-r-none px-4 py-2 md:py-3 text-white placeholder-gray-500 focus:outline-none focus:border-green-500 text-sm md:text-base min-w-0"
                   />
-                  <button className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 px-4 py-2 md:py-3 rounded-lg sm:rounded-r-lg sm:rounded-l-none font-medium transition-colors text-sm md:text-base whitespace-nowrap">
+                  <button className="bg-linear-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 px-4 py-2 md:py-3 rounded-lg sm:rounded-r-lg sm:rounded-l-none font-medium transition-colors text-sm md:text-base whitespace-nowrap">
                     Subscribe
                   </button>
                 </div>
@@ -224,7 +225,7 @@ const Footer = () => {
 
             <div className="hidden md:block">
               <a 
-                href="https://wa.me/1234567890" 
+                href="https://wa.me/2347059262039?text=Hi%20I%20want%20to%20book%20your%20service" 
                 className="inline-flex items-center bg-green-600 hover:bg-green-700 px-3 md:px-4 py-1.5 md:py-2 rounded-lg transition-colors text-sm"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -247,13 +248,13 @@ const Footer = () => {
             </div>
             <div className="flex space-x-2 flex-shrink-0">
               <a 
-                href="tel:1234567890"
+                href="tel:07059262039"
                 className="bg-white text-green-600 hover:bg-gray-100 w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center"
               >
                 <Phone className="w-4 h-4 md:w-5 md:h-5" />
               </a>
               <a 
-                href="https://wa.me/1234567890"
+               href="https://wa.me/2347059262039?text=Hi%20I%20want%20to%20book%20your%20service" 
                 className="bg-white text-green-600 hover:bg-gray-100 w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center"
                 target="_blank"
                 rel="noopener noreferrer"

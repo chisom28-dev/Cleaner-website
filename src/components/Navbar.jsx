@@ -78,8 +78,11 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <button className="bg-gradient-to-r from-emerald-500 to-green-600 text-white px-6 py-3 rounded-full font-semibold mt-4">
-                Book Now
+              <button className="bg-linear-to-r from-emerald-500 to-green-600 text-white px-6 py-3 rounded-full font-semibold mt-4">
+                  <a  href="https://wa.me/2347059262039?text=Hi%20I%20want%20to%20book%20your%20service" 
+              target="_blank" rel="noopener noreferrer">
+              Book Now
+              </a>
               </button>
             </div>
           </div>
